@@ -510,7 +510,7 @@
         {}%
         {%
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
-          \href{http://\@homepage}{\faHouseChimney\acvHeaderIconSep\@homepage}%
+          \href{https://\@homepage}{\faHouseChimney\acvHeaderIconSep\@homepage}%
         }%
       \ifthenelse{\isundefined{\@github}}%
         {}%
