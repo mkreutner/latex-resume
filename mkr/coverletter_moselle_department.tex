@@ -1,0 +1,161 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+% \definecolor{sectiondivider}{HTML}{5D5D5D}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./mkr/pictures/avatar_mkr_2025.jpg}
+\name{Michel}{Kreutner}
+\position{Engineer{\enskip\cdotp\enskip}Software Architect}
+\address{12, Quai Paul Wiltzer - 57000 Metz, Grand Est, France}
+
+\mobile{+33(0)6 3780 5997}
+\email{mkreutner@gmail.com}
+\dateofbirth{December 5th, 1975}
+\homepage{www.mkdevs.eu}
+\github{mkreutner}
+\linkedin{michel-kreutner-2a953834}
+\gitlab{mkreutner}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@michel_kreutner}
+\x{@michel\_kreutner}
+% \skype{skype-id}
+% \reddit{reddit-id}
+\medium{mkreutner}
+% \kaggle{kaggle-id}
+% \hackerrank{hackerrank-id}
+% \telegram{telegram-username}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra information}
+
+\quote{Be the change that you want to see in the world.}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Département de la Moselle}
+  {Hôtel du département\\1 rue du Pont Moreau\\C.S. 11096 - 57036 METZ Cedex 1}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{CANDIDATURE SPONTANÉE EMPLOI}
+% How the letter is opened
+\letteropening{Madame, Monsieur,}
+% How the letter is closed
+\letterclosing{Je vous prie d'agréer, Madame, Monsieur, l'expression de mes salutations respectueuses.}
+% Any enclosures with the letter
+\letterenclosure[Pièce jointe]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal information
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Michel Kreutner~~~·~~~Lettre de motivation}
+  {}
+
+% Print the title with above letter information
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+Je suis très enthousiaste à l'idée de rejoindre votre équipe au sein
+du Conseil Départemental de la Moselle. Ma passion pour l'informatique,
+la gestion de projets et la communication me pousse à vous proposer ma
+candidature spontanée.
+
+Fort d'une expérience en tant que Développeur sur différentes technologies,
+j'ai une grande connaissance de l'analyse des besoins, ainsi que de la
+conception et de la mise en œuvre de projets. La coordination avec les
+parties prenantes, que j'ai exercée avec succès, est également une de
+mes compétences. Je suis convaincu que ces compétences seront précieuses
+pour votre organisation.
+
+Je suis particulièrement attiré par le rôle du Conseil Départemental, dont 
+l'action a un impact concret et direct sur la vie des citoyens. Je suis 
+convaincu de pouvoir contribuer efficacement à la compréhension des besoins 
+rencontrés par les usagers et les acteurs en relation avec eux, afin d'y 
+apporter des réponses adaptées. J'adhère pleinement aux valeurs portées par 
+votre institution, notamment l'engagement en faveur de l'amélioration de 
+la vie publique.
+
+Je suis convaincu que mon expérience et mes compétences en matière d'analyse
+des systèmes d'information, de gestion de projets, de communication, de
+développement et de conduite de projet peuvent contribuer significativement
+à votre organisation. Je souhaite intégrer votre équipe afin d'apporter ma 
+contribution à l'atteinte des objectifs fixés par le Conseil Départemental 
+et de participer à la gestion des enjeux qui lui sont confiés.
+
+Dans l'attente d'une réponse de votre part, je me tiens à votre entière
+disposition pour tout complément d'information.
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter information
+\makeletterclosing
+
+\end{document}
