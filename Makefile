@@ -12,10 +12,16 @@ all: $(foreach x, coverletter cv resume, $x.pdf)
 resume.pdf: $(SRC_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(SRC_DIR) $<
 
+resume_fr.pdf: $(SRC_DIR)/resume_fr.tex $(RESUME_SRCS)
+	$(CC) -output-directory=$(SRC_DIR) $<
+
 cv.pdf: $(SRC_DIR)/cv.tex $(CV_SRCS)
 	$(CC) -output-directory=$(SRC_DIR) $<
 
 coverletter.pdf: $(SRC_DIR)/coverletter.tex
+	$(CC) -output-directory=$(SRC_DIR) $<
+
+coverletter_moselle_department.pdf:  $(SRC_DIR)/coverletter_moselle_department.tex
 	$(CC) -output-directory=$(SRC_DIR) $<
 
 clean:

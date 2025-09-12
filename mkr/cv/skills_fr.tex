@@ -1,0 +1,55 @@
+\newcolumntype{T}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\renewenvironment{cvskills}{%
+  \vspace{\acvSectionContentTopSkip}
+  \vspace{-2.0mm}
+  \begin{center}
+    \setlength\tabcolsep{1ex}
+    \setlength{\extrarowheight}{0pt}
+    \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} r T{\textwidth * \real{0.9}}}
+}{%
+    \end{tabular*}
+  \end{center}
+}
+
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Compétences}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvskills}
+
+%---------------------------------------------------------
+  \cvskill
+    {DevOps}% Category
+    {AWS, Azure, Google Cloud Platform, Docker, Kubernetes, \newline Rancher, Vagrant, Packer, Terraform, Jenkins, CI/CD, GitHub, GitLab} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Développement} % Category
+    {Python, PHP, C\#, ASP, C/C++, Java, JavaScript, TypeScript, HTML5, LESS, SASS, LaTeX} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Frameworks / Libraries} % Category
+    {Flask, Django, FastAPI, Symfony, Laravel, .Net, React, Angular, Bootstrap, TailWind} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Langues} % Category
+    {Français (Langue maternelle), Anglais (B1 - Intermédiaire)} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Méthodes} % Category
+    {Scrum, Kandan, Waterfall, XP, Pair programming} % Skills
+
+%---------------------------------------------------------
+  \cvskill
+    {Autres}
+    {Ouvert d'esprit, persévérant, à l'écoute, proactif, Team Player, organisé}
+
+\end{cvskills}
